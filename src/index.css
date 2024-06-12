@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    :root{
+        color-scheme: light dark;
+        --text: #0b1419;
+        --background: #e8f1f8;
+        --primary: #17496d;
+        --secondary: #6eb8ed;
+        --accent: #0b81d5;
+        --accentLighter: #0b81d56d;
+        --active:#0b81d5ba;
+
+    }
+    .dark{
+        --text: #e6eff4;
+        --background: #081219;
+        --primary: #91c4e8;
+        --secondary: #125b8f;
+        --accent: #2a9ff4;
+        --accentLighter: #0b81d56d;
+        --active: #2aa0f4ba;
+
+    }
+    /* :root{
+        color-scheme: light dark;
+        --text: #062428;
+        --background: #e9f7fc;
+        --primary: #106170;
+        --secondary: #636ee9;
+        --accent: #321cc4;
+    }
+    .dark{
+        --text: #d5f4f9;
+        --background: #031014;
+        --primary: #8fe0ef;
+        --secondary: #16229a;
+        --accent: #533de3;
+        --accentLighter: #533de3a9;
+
+    } */
+    .gridlines{
+        width: 100%;
+        min-height: 100%;
+        --color: rgba(114,114,114,0.3);
+        background-image: linear-gradient(0deg,transparent 24%,var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent ),
+        linear-gradient(90deg,transparent 24%,var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent );
+        background-size: 55px 55px;
+    }
+}
